@@ -1,0 +1,2088 @@
+typedef char __nv_bool;
+struct __C1;struct __C2;struct __C3;struct __C4;struct __C5;union __C6;struct __C7;struct __EDG_type_info;struct __class_type_info;struct __si_class_type_info;
+#line 2873 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\driver_types.h"
+struct CUstream_st;
+#line 25 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct __std_exception_data;
+#line 25 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+struct _Ctypevec;
+#line 32 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+struct _Cvtvec;
+#line 34 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\locale.h"
+struct lconv;
+#line 121 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+enum LodePNGColorType {
+#line 122 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+LCT_GREY,
+#line 123 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+LCT_RGB = 2,
+#line 124 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+LCT_PALETTE,
+#line 125 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+LCT_GREY_ALPHA,
+#line 126 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+LCT_RGBA = 6,
+#line 132 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\./include/lodepng.h"
+LCT_MAX_OCTET_VALUE = 255};
+#line 12 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+struct Point;
+#line 35 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+struct _ZSt9nothrow_t;
+#line 343 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\yvals.h"
+enum _ZSt14_Uninitialized {
+#line 344 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\yvals.h"
+_ZSt7_Noinit};
+#line 347 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\yvals.h"
+struct _ZSt7_Lockit;
+#line 26 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt17integral_constantIbLb0EE;
+#line 48 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct _ZSt9exception;
+#line 114 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct _ZSt9bad_alloc;
+#line 134 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct _ZSt20bad_array_new_length;
+#line 3978 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+struct _ZSt17_Default_sentinel;
+#line 6034 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+enum _ZSt11_TrimResult {
+#line 6034 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+_ZNSt11_TrimResult13_KeepTrimmingE,
+#line 6034 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+_ZNSt11_TrimResult22_HaveWorkAfterTrimmingE,
+#line 6034 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+_ZNSt11_TrimResult12_ReturnFalseE,
+#line 6034 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+_ZNSt11_TrimResult11_ReturnTrueE};
+#line 93 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+enum _ZSt12memory_order {
+#line 94 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+_ZSt20memory_order_relaxed,
+#line 95 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+_ZSt20memory_order_consume,
+#line 96 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+_ZSt20memory_order_acquire,
+#line 97 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+_ZSt20memory_order_release,
+#line 98 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+_ZSt20memory_order_acq_rel,
+#line 99 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+_ZSt20memory_order_seq_cst};
+#line 80 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt24_Default_allocate_traits;
+#line 755 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+enum _ZSt13_Pocma_values {
+#line 756 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt13_Pocma_values17_Equal_allocatorsE,
+#line 757 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt13_Pocma_values21_Propagate_allocatorsE,
+#line 758 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt13_Pocma_values24_No_propagate_allocatorsE};
+#line 1188 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Container_proxy;
+#line 1196 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt17_Container_base12;
+#line 1240 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Iterator_base12;
+#line 1430 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt20_Leave_proxy_unbound;
+#line 1444 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt28_Basic_container_proxy_ptr12;
+#line 1501 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt26_Zero_then_variadic_args_t;
+#line 1505 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_One_then_variadic_args_t;
+#line 336 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11char_traitsIDsE;
+#line 339 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11char_traitsIDiE;
+#line 342 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11char_traitsIwE;
+#line 35 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt12_Char_traitsIciE;
+#line 356 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt19_Narrow_char_traitsIciE;
+#line 480 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11char_traitsIcE;
+#line 2303 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt30_String_constructor_concat_tag;
+#line 170 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSaIcE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIcEE;
+#line 2193 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt18_String_iter_typesIcyxPcPKcE;
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIcESt18_String_iter_typesIcyxPcPKcEE;
+#line 2075 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIcEEE;
+#line 1838 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIcEEE;
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIcE;
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIcEE5_BxtyE;
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIcEE;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIcESt11_String_valISt13_Simple_typesIcEELb1EE;
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSs18_Allocation_policyE {
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSs18_Allocation_policy9_At_leastE,
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSs18_Allocation_policy8_ExactlyE};
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSs19_Construct_strategyE {
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSs19_Construct_strategy10_From_charE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSs19_Construct_strategy9_From_ptrE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSs19_Construct_strategy12_From_stringE};
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSs;
+#line 170 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSaIwE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIwEE;
+#line 2193 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt18_String_iter_typesIwyxPwPKwE;
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIwESt18_String_iter_typesIwyxPwPKwEE;
+#line 2075 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIwEEE;
+#line 1838 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIwEEE;
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIwE;
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIwEE5_BxtyE;
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIwEE;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIwESt11_String_valISt13_Simple_typesIwEELb1EE;
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSbIwSt11char_traitsIwESaIwEE18_Allocation_policyE {
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIwSt11char_traitsIwESaIwEE18_Allocation_policy9_At_leastE,
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIwSt11char_traitsIwESaIwEE18_Allocation_policy8_ExactlyE};
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSbIwSt11char_traitsIwESaIwEE19_Construct_strategyE {
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIwSt11char_traitsIwESaIwEE19_Construct_strategy10_From_charE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIwSt11char_traitsIwESaIwEE19_Construct_strategy9_From_ptrE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIwSt11char_traitsIwESaIwEE19_Construct_strategy12_From_stringE};
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSbIwSt11char_traitsIwESaIwEE;
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaIDsE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIDsEE;
+#line 2193 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt18_String_iter_typesIDsyxPDsPKDsE;
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIDsESt18_String_iter_typesIDsyxPDsPKDsEE;
+#line 2075 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIDsEEE;
+#line 1838 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIDsEEE;
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIDsE;
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIDsEE5_BxtyE;
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIDsEE;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIDsESt11_String_valISt13_Simple_typesIDsEELb1EE;
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSbIDsSt11char_traitsIDsESaIDsEE18_Allocation_policyE {
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDsSt11char_traitsIDsESaIDsEE18_Allocation_policy9_At_leastE,
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDsSt11char_traitsIDsESaIDsEE18_Allocation_policy8_ExactlyE};
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSbIDsSt11char_traitsIDsESaIDsEE19_Construct_strategyE {
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDsSt11char_traitsIDsESaIDsEE19_Construct_strategy10_From_charE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDsSt11char_traitsIDsESaIDsEE19_Construct_strategy9_From_ptrE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDsSt11char_traitsIDsESaIDsEE19_Construct_strategy12_From_stringE};
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSbIDsSt11char_traitsIDsESaIDsEE;
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaIDiE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIDiEE;
+#line 2193 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt18_String_iter_typesIDiyxPDiPKDiE;
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIDiESt18_String_iter_typesIDiyxPDiPKDiEE;
+#line 2075 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIDiEEE;
+#line 1838 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIDiEEE;
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIDiE;
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIDiEE5_BxtyE;
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIDiEE;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIDiESt11_String_valISt13_Simple_typesIDiEELb1EE;
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSbIDiSt11char_traitsIDiESaIDiEE18_Allocation_policyE {
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDiSt11char_traitsIDiESaIDiEE18_Allocation_policy9_At_leastE,
+#line 2598 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDiSt11char_traitsIDiESaIDiEE18_Allocation_policy8_ExactlyE};
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+enum _ZNSbIDiSt11char_traitsIDiESaIDiEE19_Construct_strategyE {
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDiSt11char_traitsIDiESaIDiEE19_Construct_strategy10_From_charE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDiSt11char_traitsIDiESaIDiEE19_Construct_strategy9_From_ptrE,
+#line 2633 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSbIDiSt11char_traitsIDiESaIDiEE19_Construct_strategy12_From_stringE};
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSbIDiSt11char_traitsIDiESaIDiEE;
+#line 100 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\stdexcept"
+struct _ZSt13runtime_error;
+#line 19 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+enum _ZSt4errc {
+#line 20 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc28address_family_not_supportedE = 102,
+#line 21 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14address_in_useE = 100,
+#line 22 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc21address_not_availableE,
+#line 23 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc17already_connectedE = 113,
+#line 24 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc22argument_list_too_longE = 7,
+#line 25 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc22argument_out_of_domainE = 33,
+#line 26 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc11bad_addressE = 14,
+#line 27 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19bad_file_descriptorE = 9,
+#line 28 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc11bad_messageE = 104,
+#line 29 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc11broken_pipeE = 32,
+#line 30 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc18connection_abortedE = 106,
+#line 31 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc30connection_already_in_progressE = 103,
+#line 32 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc18connection_refusedE = 107,
+#line 33 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc16connection_resetE,
+#line 34 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc17cross_device_linkE = 18,
+#line 35 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc28destination_address_requiredE = 109,
+#line 36 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc23device_or_resource_busyE = 16,
+#line 37 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19directory_not_emptyE = 41,
+#line 38 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc23executable_format_errorE = 8,
+#line 39 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc11file_existsE = 17,
+#line 40 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14file_too_largeE = 27,
+#line 41 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc17filename_too_longE = 38,
+#line 42 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc22function_not_supportedE = 40,
+#line 43 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc16host_unreachableE = 110,
+#line 44 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc18identifier_removedE,
+#line 45 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc21illegal_byte_sequenceE = 42,
+#line 46 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc34inappropriate_io_control_operationE = 25,
+#line 47 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc11interruptedE = 4,
+#line 48 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc16invalid_argumentE = 22,
+#line 49 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc12invalid_seekE = 29,
+#line 50 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc8io_errorE = 5,
+#line 51 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14is_a_directoryE = 21,
+#line 52 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc12message_sizeE = 115,
+#line 53 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc12network_downE,
+#line 54 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc13network_resetE,
+#line 55 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19network_unreachableE,
+#line 56 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc15no_buffer_spaceE,
+#line 57 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc16no_child_processE = 10,
+#line 58 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc7no_linkE = 121,
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc17no_lock_availableE = 39,
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc20no_message_availableE = 120,
+#line 61 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc10no_messageE = 122,
+#line 62 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc18no_protocol_optionE,
+#line 63 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc18no_space_on_deviceE = 28,
+#line 64 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19no_stream_resourcesE = 124,
+#line 65 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc25no_such_device_or_addressE = 6,
+#line 66 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14no_such_deviceE = 19,
+#line 67 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc25no_such_file_or_directoryE = 2,
+#line 68 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc15no_such_processE,
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc15not_a_directoryE = 20,
+#line 70 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc12not_a_socketE = 128,
+#line 71 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc12not_a_streamE = 125,
+#line 72 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc13not_connectedE,
+#line 73 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc17not_enough_memoryE = 12,
+#line 74 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc13not_supportedE = 129,
+#line 75 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc18operation_canceledE = 105,
+#line 76 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc21operation_in_progressE = 112,
+#line 77 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc23operation_not_permittedE = 1,
+#line 78 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc23operation_not_supportedE = 130,
+#line 79 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc21operation_would_blockE = 140,
+#line 80 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc10owner_deadE = 133,
+#line 81 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc17permission_deniedE = 13,
+#line 82 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14protocol_errorE = 134,
+#line 83 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc22protocol_not_supportedE,
+#line 84 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc21read_only_file_systemE = 30,
+#line 85 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc29resource_deadlock_would_occurE = 36,
+#line 86 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc30resource_unavailable_try_againE = 11,
+#line 87 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19result_out_of_rangeE = 34,
+#line 88 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc21state_not_recoverableE = 127,
+#line 89 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14stream_timeoutE = 137,
+#line 90 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14text_file_busyE = 139,
+#line 91 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc9timed_outE = 138,
+#line 92 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc29too_many_files_open_in_systemE = 23,
+#line 93 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19too_many_files_openE,
+#line 94 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc14too_many_linksE = 31,
+#line 95 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc29too_many_symbolic_link_levelsE = 114,
+#line 96 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc15value_too_largeE = 132,
+#line 97 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xerrc.h"
+_ZNSt4errc19wrong_protocol_typeE = 136};
+#line 38 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+enum _ZSt7io_errc {
+#line 39 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+_ZNSt7io_errc6streamE = 1};
+#line 134 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+union _ZNSt14error_category13_Addr_storageE;
+#line 157 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+enum _ZNSt14error_categoryUt_E {
+#line 158 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+_ZNSt14error_category12_Future_addrE = 1ULL,
+#line 159 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+_ZNSt14error_category13_Generic_addrE = 3ULL,
+#line 160 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+_ZNSt14error_category14_Iostream_addrE = 5ULL,
+#line 161 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+_ZNSt14error_category12_System_addrE = 7ULL};
+#line 74 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt14error_category;
+#line 169 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt10error_code;
+#line 469 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt13_System_error;
+#line 489 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt12system_error;
+#line 555 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt25_Iostream_error_category2;
+#line 146 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_typeinfo.h"
+struct _ZSt8bad_cast;
+#line 1124 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt15_Ref_count_base;
+#line 23 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xfacet"
+struct _ZSt11_Facet_base;
+#line 135 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIcE;
+#line 135 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIwE;
+#line 215 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt8_Locinfo;
+#line 58 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt15_Crt_new_delete;
+#line 26 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt8_LocbaseIiE;
+#line 93 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale2idE;
+#line 119 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale5facetE;
+#line 166 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale7_LocimpE;
+#line 89 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt6locale;
+#line 859 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+enum _ZSt13_Codecvt_mode {
+#line 859 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZSt15_Consume_header = 4,
+#line 859 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZSt16_Generate_header = 2};
+#line 2368 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt10ctype_base;
+#line 2637 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt5ctypeIcE;
+#line 3249 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+enum _ZSt15_Case_sensitive {
+#line 3249 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZNSt15_Case_sensitive5_NopeE,
+#line 3249 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZNSt15_Case_sensitive4_YesE};
+#line 54 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+enum _ZNSt5_IosbIiE8_IostateE {
+#line 55 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt5_IosbIiE9_StatmaskE = 23};
+#line 23 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZSt5_IosbIiE;
+#line 108 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+enum _ZNSt8ios_base5eventE {
+#line 109 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt8ios_base11erase_eventE,
+#line 110 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt8ios_base11imbue_eventE,
+#line 111 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt8ios_base13copyfmt_eventE};
+#line 122 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZNSt8ios_base7failureE;
+#line 403 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZNSt8ios_base9_IosarrayE;
+#line 414 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZNSt8ios_base8_FnarrayE;
+#line 96 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZSt8ios_base;
+#line 179 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE;
+#line 85 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+struct _ZSt8numpunctIcE;
+#line 85 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+struct _ZSt8numpunctIwE;
+#line 173 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSt9basic_iosIcSt11char_traitsIcEE;
+#line 73 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ostream"
+struct _ZNSo12_Sentry_baseE;
+#line 94 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ostream"
+struct _ZNSo6sentryE;
+#line 185 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSo;
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaIhE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIhEE;
+#line 373 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt15_Vec_iter_typesIhyxPhPKhE;
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIhESt15_Vec_iter_typesIhyxPhPKhEE;
+#line 251 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt16_Vector_iteratorISt11_Vector_valISt13_Simple_typesIhEEE;
+#line 27 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt22_Vector_const_iteratorISt11_Vector_valISt13_Simple_typesIhEEE;
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIhE;
+#line 386 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt11_Vector_valISt13_Simple_typesIhEE;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIhESt11_Vector_valISt13_Simple_typesIhEELb1EE;
+#line 436 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt6vectorIhSaIhEE;
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaI5PointE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaI5PointEE;
+#line 373 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt15_Vec_iter_typesI5PointyxPS0_PKS0_E;
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesI5PointESt15_Vec_iter_typesIS1_yxPS1_PKS1_EE;
+#line 251 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt16_Vector_iteratorISt11_Vector_valISt13_Simple_typesI5PointEEE;
+#line 27 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt22_Vector_const_iteratorISt11_Vector_valISt13_Simple_typesI5PointEEE;
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesI5PointE;
+#line 386 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt11_Vector_valISt13_Simple_typesI5PointEE;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaI5PointESt11_Vector_valISt13_Simple_typesIS0_EELb1EE;
+#line 436 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt6vectorI5PointSaIS0_EE;
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaISt16_Container_proxyE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIPSt17_Container_base12E;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceISaIcEE;
+#line 1459 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt22_Container_proxy_ptr12ISaISt16_Container_proxyEE;
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaISt16_Container_proxyEE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRKPcE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRSaIcEE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRPcE;
+#line 660 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+union __C12;
+#line 659 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt27_Constexpr_immortalize_implISt25_Iostream_error_category2E;
+#line 426 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt9_FacetptrISt5ctypeIcEE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceISt14default_deleteISt11_Facet_baseEE;
+#line 3162 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt14default_deleteISt11_Facet_baseE;
+#line 3189 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt25_Get_deleter_pointer_typeISt11_Facet_baseSt14default_deleteIS0_EvE;
+#line 84 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt7is_sameISt14default_deleteISt11_Facet_baseES2_E;
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISt14default_deleteISt11_Facet_baseEPS1_Lb1EE;
+#line 3203 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRPSt11_Facet_baseE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRKSaIhEE;
+#line 40 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt11_Tidy_guardISt6vectorIhSaIhEEE;
+#line 1784 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Uninitialized_backout_alISaIhEE;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRKSaI5PointEE;
+#line 40 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt11_Tidy_guardISt6vectorI5PointSaIS1_EEE;
+#line 1784 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Uninitialized_backout_alISaI5PointEE;
+#line 3279 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZZNSs6appendEPKcyEUlPcS0_yS0_yE_; struct __C3 { struct __C2 *regions; void **obj_table; struct __C1 *array_table; unsigned short saved_region_number;char __nv_no_debug_dummy_end_padding_0[6];}; struct __C4 { const struct __EDG_type_info *tinfo; unsigned flags; unsigned *ptr_flags;}; struct __C5 { int setjmp_buffer[16]; struct __C4 *catch_entries; void *rtinfo; unsigned short region_number;char __nv_no_debug_dummy_end_padding_0[6];}; union __C6 { struct __C5 try_block; struct __C3 function; struct __C4 *throw_spec;}; struct __C7 { struct __C7 *next; unsigned char kind; union __C6 variant;}; struct __EDG_type_info { const long long *__vptr; const char *__name;}; struct __class_type_info { struct __EDG_type_info base;}; struct __si_class_type_info { struct __class_type_info base; const struct __class_type_info *base_type;};
+#line 193 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime.h"
+typedef unsigned long long size_t;
+#include "crt/device_runtime.h"
+#line 61 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vadefs.h"
+typedef unsigned long long uintptr_t;
+#line 194 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime.h"
+typedef long long ptrdiff_t;
+#line 22 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\stdint.h"
+typedef unsigned char uint8_t;
+#pragma pack(8)
+#line 25 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct __std_exception_data {
+#line 27 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+const char *_What;
+#line 28 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+__nv_bool _DoFree;char __nv_no_debug_dummy_end_padding_0[7];};
+#pragma pack()
+#pragma pack(8)
+#line 25 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+struct _Ctypevec {
+#line 26 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+unsigned _Page;
+#line 27 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+const short *_Table;
+#line 28 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+int _Delfl;
+#line 29 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+unsigned short *_LocaleName;};
+#pragma pack()
+#pragma pack(8)
+#line 32 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+struct _Cvtvec {
+#line 33 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+unsigned _Page;
+#line 34 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+unsigned _Mbcurmax;
+#line 35 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+int _Isclocale;
+#line 36 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp"
+unsigned char _Isleadbyte[32];};
+#pragma pack()
+#line 12 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+struct Point {
+#line 13 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+float x;
+#line 13 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+float y;}; typedef void *_ZSt9nullptr_t;
+#pragma pack(8)
+#line 35 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+struct _ZSt9nothrow_t {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 347 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\yvals.h"
+struct _ZSt7_Lockit {
+#line 381 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\yvals.h"
+int _Locktype;};
+#pragma pack()
+#line 42 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt17integral_constantIbLb0EE _ZSt13bool_constantILb0EE;
+#line 45 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZSt13bool_constantILb0EE _ZSt10false_type;
+#pragma pack(8)
+#line 48 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct _ZSt9exception { const long long *__vptr;
+#line 100 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct __std_exception_data _Data;};
+#pragma pack()
+#pragma pack(8)
+#line 114 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct _ZSt9bad_alloc { struct _ZSt9exception __b_St9exception;};
+#pragma pack()
+#pragma pack(8)
+#line 134 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_exception.h"
+struct _ZSt20bad_array_new_length { struct _ZSt9bad_alloc __b_St9bad_alloc;};
+#pragma pack()
+#line 47 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+typedef long long _ZSt10streamsize;
+#line 237 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+typedef struct _ZSo _ZSt7ostream;
+#pragma pack(8)
+#line 3978 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xutility"
+struct _ZSt17_Default_sentinel {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 103 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xatomic.h"
+typedef unsigned long _ZSt17_Atomic_counter_t;
+#pragma pack(8)
+#line 80 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt24_Default_allocate_traits {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 1188 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Container_proxy {
+#line 1192 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+const struct _ZSt17_Container_base12 *_Mycont;
+#line 1193 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Iterator_base12 *_Myfirstiter;};
+#pragma pack()
+#pragma pack(8)
+#line 1196 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt17_Container_base12 {
+#line 1223 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Container_proxy *_Myproxy;};
+#pragma pack()
+#pragma pack(8)
+#line 1240 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Iterator_base12 {
+#line 1302 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Container_proxy *_Myproxy;
+#line 1303 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Iterator_base12 *_Mynextiter;};
+#pragma pack()
+#line 1426 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSt17_Container_base12 _ZSt15_Container_base;
+#pragma pack(8)
+#line 1430 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt20_Leave_proxy_unbound {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 1444 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt28_Basic_container_proxy_ptr12 {
+#line 1446 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Container_proxy *_Ptr;};
+#pragma pack()
+#pragma pack(8)
+#line 1501 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt26_Zero_then_variadic_args_t {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 1505 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_One_then_variadic_args_t {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 35 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt12_Char_traitsIciE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 363 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef int _ZNSt19_Narrow_char_traitsIciE8int_typeE;
+#pragma pack(8)
+#line 356 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt19_Narrow_char_traitsIciE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 2303 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt30_String_constructor_concat_tag {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 5127 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSs _ZSt6string;
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef char _ZNSaIcE10value_typeE;
+#pragma pack(8)
+#line 170 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSaIcE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaIcE10value_typeE _ZNSt25_Default_allocator_traitsISaIcEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIcEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIcEE7pointerE;
+#line 652 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef const _ZNSt25_Default_allocator_traitsISaIcEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIcEE13const_pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaIcEE9size_typeE;
+#line 657 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef ptrdiff_t _ZNSt25_Default_allocator_traitsISaIcEE15difference_typeE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaIcE _ZNSt25_Default_allocator_traitsISaIcEE12rebind_allocIcEE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaISt16_Container_proxyE _ZNSt25_Default_allocator_traitsISaIcEE12rebind_allocISt16_Container_proxyEE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIcEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIcEE12rebind_allocIcEE _ZSt15_Rebind_alloc_tISaIcEcE;
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt13_Simple_typesIcE _ZNSt11conditionalILb1ESt13_Simple_typesIcESt18_String_iter_typesIcyxPcPKcEE4typeE;
+#pragma pack(8)
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIcESt18_String_iter_typesIcyxPcPKcEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11conditionalILb1ESt13_Simple_typesIcESt18_String_iter_typesIcyxPcPKcEE4typeE _ZSt13conditional_tILb1ESt13_Simple_typesIcESt18_String_iter_typesIcyxPcPKcEE;
+#line 789 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef char _ZNSt13_Simple_typesIcE10value_typeE;
+#line 790 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt13_Simple_typesIcE9size_typeE;
+#line 792 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt13_Simple_typesIcE10value_typeE *_ZNSt13_Simple_typesIcE7pointerE;
+#pragma pack(8)
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIcE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 2204 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIcE10value_typeE _ZNSt11_String_valISt13_Simple_typesIcEE10value_typeE;
+#line 2205 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIcE9size_typeE _ZNSt11_String_valISt13_Simple_typesIcEE9size_typeE;
+#line 2207 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIcE7pointerE _ZNSt11_String_valISt13_Simple_typesIcEE7pointerE;
+#pragma pack(8)
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIcEE5_BxtyE {
+#line 2287 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIcEE10value_typeE _Buf[16];
+#line 2288 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIcEE7pointerE _Ptr;
+#line 2289 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+char _Alias[16];};
+#pragma pack()
+#pragma pack(8)
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIcEE { struct _ZSt17_Container_base12 __b_St17_Container_base12;
+#line 2291 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIcEE5_BxtyE _Bx;
+#line 2295 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIcEE9size_typeE _Mysize;
+#line 2296 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIcEE9size_typeE _Myres;};
+#pragma pack()
+#line 2332 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt11_String_valISt13_Simple_typesIcEE _ZNSs10_Scary_valE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIcESt11_String_valISt13_Simple_typesIcEELb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSs10_Scary_valE _Myval2;};
+#pragma pack()
+#line 2329 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZSt15_Rebind_alloc_tISaIcEcE _ZNSs5_AltyE;
+#line 2352 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIcEE9size_typeE _ZNSs9size_typeE;
+#line 2354 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIcEE7pointerE _ZNSs7pointerE;
+#line 2359 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIcEEE _ZNSs8iteratorE;
+#line 2360 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIcEEE _ZNSs14const_iteratorE;
+#pragma pack(8)
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSs {
+#line 4873 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_Compressed_pairISaIcESt11_String_valISt13_Simple_typesIcEELb1EE _Mypair;};
+#pragma pack()
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned short _ZNSaIwE10value_typeE;
+#pragma pack(8)
+#line 170 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSaIwE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaIwE10value_typeE _ZNSt25_Default_allocator_traitsISaIwEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIwEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIwEE7pointerE;
+#line 652 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef const _ZNSt25_Default_allocator_traitsISaIwEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIwEE13const_pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaIwEE9size_typeE;
+#line 657 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef ptrdiff_t _ZNSt25_Default_allocator_traitsISaIwEE15difference_typeE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaIwE _ZNSt25_Default_allocator_traitsISaIwEE12rebind_allocIwEE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIwEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIwEE12rebind_allocIwEE _ZSt15_Rebind_alloc_tISaIwEwE;
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt13_Simple_typesIwE _ZNSt11conditionalILb1ESt13_Simple_typesIwESt18_String_iter_typesIwyxPwPKwEE4typeE;
+#pragma pack(8)
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIwESt18_String_iter_typesIwyxPwPKwEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11conditionalILb1ESt13_Simple_typesIwESt18_String_iter_typesIwyxPwPKwEE4typeE _ZSt13conditional_tILb1ESt13_Simple_typesIwESt18_String_iter_typesIwyxPwPKwEE;
+#line 789 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned short _ZNSt13_Simple_typesIwE10value_typeE;
+#line 790 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt13_Simple_typesIwE9size_typeE;
+#line 792 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt13_Simple_typesIwE10value_typeE *_ZNSt13_Simple_typesIwE7pointerE;
+#pragma pack(8)
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIwE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 2204 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIwE10value_typeE _ZNSt11_String_valISt13_Simple_typesIwEE10value_typeE;
+#line 2205 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIwE9size_typeE _ZNSt11_String_valISt13_Simple_typesIwEE9size_typeE;
+#line 2207 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIwE7pointerE _ZNSt11_String_valISt13_Simple_typesIwEE7pointerE;
+#pragma pack(8)
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIwEE5_BxtyE {
+#line 2287 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIwEE10value_typeE _Buf[8];
+#line 2288 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIwEE7pointerE _Ptr;
+#line 2289 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+char _Alias[8];};
+#pragma pack()
+#pragma pack(8)
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIwEE { struct _ZSt17_Container_base12 __b_St17_Container_base12;
+#line 2291 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIwEE5_BxtyE _Bx;
+#line 2295 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIwEE9size_typeE _Mysize;
+#line 2296 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIwEE9size_typeE _Myres;};
+#pragma pack()
+#line 2332 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt11_String_valISt13_Simple_typesIwEE _ZNSbIwSt11char_traitsIwESaIwEE10_Scary_valE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIwESt11_String_valISt13_Simple_typesIwEELb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSbIwSt11char_traitsIwESaIwEE10_Scary_valE _Myval2;};
+#pragma pack()
+#line 2329 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZSt15_Rebind_alloc_tISaIwEwE _ZNSbIwSt11char_traitsIwESaIwEE5_AltyE;
+#line 2352 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIwEE9size_typeE _ZNSbIwSt11char_traitsIwESaIwEE9size_typeE;
+#line 2354 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIwEE7pointerE _ZNSbIwSt11char_traitsIwESaIwEE7pointerE;
+#line 2359 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIwEEE _ZNSbIwSt11char_traitsIwESaIwEE8iteratorE;
+#line 2360 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIwEEE _ZNSbIwSt11char_traitsIwESaIwEE14const_iteratorE;
+#pragma pack(8)
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSbIwSt11char_traitsIwESaIwEE {
+#line 4873 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_Compressed_pairISaIwESt11_String_valISt13_Simple_typesIwEELb1EE _Mypair;};
+#pragma pack()
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned short _ZNSaIDsE10value_typeE;
+#pragma pack(8)
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaIDsE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaIDsE10value_typeE _ZNSt25_Default_allocator_traitsISaIDsEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIDsEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIDsEE7pointerE;
+#line 652 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef const _ZNSt25_Default_allocator_traitsISaIDsEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIDsEE13const_pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaIDsEE9size_typeE;
+#line 657 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef ptrdiff_t _ZNSt25_Default_allocator_traitsISaIDsEE15difference_typeE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaIDsE _ZNSt25_Default_allocator_traitsISaIDsEE12rebind_allocIDsEE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIDsEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIDsEE12rebind_allocIDsEE _ZSt15_Rebind_alloc_tISaIDsEDsE;
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt13_Simple_typesIDsE _ZNSt11conditionalILb1ESt13_Simple_typesIDsESt18_String_iter_typesIDsyxPDsPKDsEE4typeE;
+#pragma pack(8)
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIDsESt18_String_iter_typesIDsyxPDsPKDsEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11conditionalILb1ESt13_Simple_typesIDsESt18_String_iter_typesIDsyxPDsPKDsEE4typeE _ZSt13conditional_tILb1ESt13_Simple_typesIDsESt18_String_iter_typesIDsyxPDsPKDsEE;
+#line 789 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned short _ZNSt13_Simple_typesIDsE10value_typeE;
+#line 790 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt13_Simple_typesIDsE9size_typeE;
+#line 792 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt13_Simple_typesIDsE10value_typeE *_ZNSt13_Simple_typesIDsE7pointerE;
+#pragma pack(8)
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIDsE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 2204 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIDsE10value_typeE _ZNSt11_String_valISt13_Simple_typesIDsEE10value_typeE;
+#line 2205 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIDsE9size_typeE _ZNSt11_String_valISt13_Simple_typesIDsEE9size_typeE;
+#line 2207 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIDsE7pointerE _ZNSt11_String_valISt13_Simple_typesIDsEE7pointerE;
+#pragma pack(8)
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIDsEE5_BxtyE {
+#line 2287 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDsEE10value_typeE _Buf[8];
+#line 2288 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDsEE7pointerE _Ptr;
+#line 2289 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+char _Alias[8];};
+#pragma pack()
+#pragma pack(8)
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIDsEE { struct _ZSt17_Container_base12 __b_St17_Container_base12;
+#line 2291 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIDsEE5_BxtyE _Bx;
+#line 2295 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDsEE9size_typeE _Mysize;
+#line 2296 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDsEE9size_typeE _Myres;};
+#pragma pack()
+#line 2332 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt11_String_valISt13_Simple_typesIDsEE _ZNSbIDsSt11char_traitsIDsESaIDsEE10_Scary_valE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIDsESt11_String_valISt13_Simple_typesIDsEELb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSbIDsSt11char_traitsIDsESaIDsEE10_Scary_valE _Myval2;};
+#pragma pack()
+#line 2329 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZSt15_Rebind_alloc_tISaIDsEDsE _ZNSbIDsSt11char_traitsIDsESaIDsEE5_AltyE;
+#line 2352 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIDsEE9size_typeE _ZNSbIDsSt11char_traitsIDsESaIDsEE9size_typeE;
+#line 2354 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIDsEE7pointerE _ZNSbIDsSt11char_traitsIDsESaIDsEE7pointerE;
+#line 2359 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIDsEEE _ZNSbIDsSt11char_traitsIDsESaIDsEE8iteratorE;
+#line 2360 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIDsEEE _ZNSbIDsSt11char_traitsIDsESaIDsEE14const_iteratorE;
+#pragma pack(8)
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSbIDsSt11char_traitsIDsESaIDsEE {
+#line 4873 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_Compressed_pairISaIDsESt11_String_valISt13_Simple_typesIDsEELb1EE _Mypair;};
+#pragma pack()
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned _ZNSaIDiE10value_typeE;
+#pragma pack(8)
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaIDiE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaIDiE10value_typeE _ZNSt25_Default_allocator_traitsISaIDiEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIDiEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIDiEE7pointerE;
+#line 652 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef const _ZNSt25_Default_allocator_traitsISaIDiEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIDiEE13const_pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaIDiEE9size_typeE;
+#line 657 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef ptrdiff_t _ZNSt25_Default_allocator_traitsISaIDiEE15difference_typeE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaIDiE _ZNSt25_Default_allocator_traitsISaIDiEE12rebind_allocIDiEE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIDiEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIDiEE12rebind_allocIDiEE _ZSt15_Rebind_alloc_tISaIDiEDiE;
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt13_Simple_typesIDiE _ZNSt11conditionalILb1ESt13_Simple_typesIDiESt18_String_iter_typesIDiyxPDiPKDiEE4typeE;
+#pragma pack(8)
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIDiESt18_String_iter_typesIDiyxPDiPKDiEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11conditionalILb1ESt13_Simple_typesIDiESt18_String_iter_typesIDiyxPDiPKDiEE4typeE _ZSt13conditional_tILb1ESt13_Simple_typesIDiESt18_String_iter_typesIDiyxPDiPKDiEE;
+#line 789 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned _ZNSt13_Simple_typesIDiE10value_typeE;
+#line 790 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt13_Simple_typesIDiE9size_typeE;
+#line 792 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt13_Simple_typesIDiE10value_typeE *_ZNSt13_Simple_typesIDiE7pointerE;
+#pragma pack(8)
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIDiE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 2204 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIDiE10value_typeE _ZNSt11_String_valISt13_Simple_typesIDiEE10value_typeE;
+#line 2205 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIDiE9size_typeE _ZNSt11_String_valISt13_Simple_typesIDiEE9size_typeE;
+#line 2207 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt13_Simple_typesIDiE7pointerE _ZNSt11_String_valISt13_Simple_typesIDiEE7pointerE;
+#pragma pack(8)
+#line 2281 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIDiEE5_BxtyE {
+#line 2287 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDiEE10value_typeE _Buf[4];
+#line 2288 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDiEE7pointerE _Ptr;
+#line 2289 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+char _Alias[4];};
+#pragma pack()
+#pragma pack(8)
+#line 2202 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt11_String_valISt13_Simple_typesIDiEE { struct _ZSt17_Container_base12 __b_St17_Container_base12;
+#line 2291 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+union _ZNSt11_String_valISt13_Simple_typesIDiEE5_BxtyE _Bx;
+#line 2295 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDiEE9size_typeE _Mysize;
+#line 2296 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+_ZNSt11_String_valISt13_Simple_typesIDiEE9size_typeE _Myres;};
+#pragma pack()
+#line 2332 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt11_String_valISt13_Simple_typesIDiEE _ZNSbIDiSt11char_traitsIDiESaIDiEE10_Scary_valE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIDiESt11_String_valISt13_Simple_typesIDiEELb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSbIDiSt11char_traitsIDiESaIDiEE10_Scary_valE _Myval2;};
+#pragma pack()
+#line 2329 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZSt15_Rebind_alloc_tISaIDiEDiE _ZNSbIDiSt11char_traitsIDiESaIDiEE5_AltyE;
+#line 2352 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIDiEE9size_typeE _ZNSbIDiSt11char_traitsIDiESaIDiEE9size_typeE;
+#line 2354 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef _ZNSt25_Default_allocator_traitsISaIDiEE7pointerE _ZNSbIDiSt11char_traitsIDiESaIDiEE7pointerE;
+#line 2359 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt16_String_iteratorISt11_String_valISt13_Simple_typesIDiEEE _ZNSbIDiSt11char_traitsIDiESaIDiEE8iteratorE;
+#line 2360 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+typedef struct _ZSt22_String_const_iteratorISt11_String_valISt13_Simple_typesIDiEEE _ZNSbIDiSt11char_traitsIDiESaIDiEE14const_iteratorE;
+#pragma pack(8)
+#line 2324 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSbIDiSt11char_traitsIDiESaIDiEE {
+#line 4873 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZSt16_Compressed_pairISaIDiESt11_String_valISt13_Simple_typesIDiEELb1EE _Mypair;};
+#pragma pack()
+#pragma pack(8)
+#line 100 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\stdexcept"
+struct _ZSt13runtime_error { struct _ZSt9exception __b_St9exception;};
+#pragma pack()
+#pragma pack(8)
+#line 134 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+union _ZNSt14error_category13_Addr_storageE {
+#line 136 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+uintptr_t _Num;
+#line 137 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt14error_category *_Ptr;};
+#pragma pack()
+#pragma pack(8)
+#line 74 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt14error_category { const long long *__vptr;
+#line 152 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+union _ZNSt14error_category13_Addr_storageE _Addr;};
+#pragma pack()
+#pragma pack(8)
+#line 169 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt10error_code {
+#line 258 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+int _Myval;
+#line 259 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+const struct _ZSt14error_category *_Mycat;};
+#pragma pack()
+#pragma pack(8)
+#line 469 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt13_System_error { struct _ZSt13runtime_error __b_St13runtime_error;
+#line 486 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt10error_code _Mycode;};
+#pragma pack()
+#pragma pack(8)
+#line 489 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt12system_error { struct _ZSt13_System_error __b_St13_System_error;};
+#pragma pack()
+#pragma pack(8)
+#line 555 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt25_Iostream_error_category2 { struct _ZSt14error_category __b_St14error_category;};
+#pragma pack()
+#pragma pack(8)
+#line 146 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_typeinfo.h"
+struct _ZSt8bad_cast { struct _ZSt9exception __b_St9exception;};
+#pragma pack()
+#pragma pack(8)
+#line 23 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xfacet"
+struct _ZSt11_Facet_base { const long long *__vptr;};
+#pragma pack()
+#pragma pack(8)
+#line 135 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIcE {
+#line 211 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+char *_Myptr;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+char _Nul;char __nv_no_debug_dummy_end_padding_0[7];};
+#pragma pack()
+#pragma pack(8)
+#line 135 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIwE {
+#line 211 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+unsigned short *_Myptr;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+unsigned short _Nul;char __nv_no_debug_dummy_end_padding_0[6];};
+#pragma pack()
+#line 218 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+typedef struct _Ctypevec _ZNSt8_Locinfo9_CtypevecE;
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+typedef struct _Cvtvec _ZNSt8_Locinfo7_CvtvecE;
+#pragma pack(8)
+#line 215 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt8_Locinfo {
+#line 375 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt7_Lockit _Lock;
+#line 378 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIcE _Days;
+#line 379 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIcE _Months;
+#line 380 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIwE _W_Days;
+#line 381 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIwE _W_Months;
+#line 382 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIcE _Oldlocname;
+#line 383 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocinfo"
+struct _ZSt5_YarnIcE _Newlocname;};
+#pragma pack()
+#pragma pack(8)
+#line 58 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt15_Crt_new_delete {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#pragma pack(8)
+#line 26 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt8_LocbaseIiE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 91 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+typedef int _ZNSt6locale8categoryE;
+#pragma pack(8)
+#line 93 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale2idE {
+#line 112 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+size_t _Id;};
+#pragma pack()
+#pragma pack(8)
+#line 119 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale5facetE { struct _ZSt11_Facet_base __b_St11_Facet_base;
+#line 143 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZSt17_Atomic_counter_t _Myrefs;char __nv_no_debug_dummy_end_padding_0[4];};
+#pragma pack()
+#pragma pack(8)
+#line 166 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale7_LocimpE { struct _ZNSt6locale5facetE __b_NSt6locale5facetE;
+#line 210 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale5facetE **_Facetvec;
+#line 211 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+size_t _Facetcount;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZNSt6locale8categoryE _Catmask;
+#line 213 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+__nv_bool _Xparent;
+#line 214 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt5_YarnIcE _Name;};
+#pragma pack()
+#pragma pack(8)
+#line 89 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt6locale {
+#line 422 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZNSt6locale7_LocimpE *_Ptr;};
+#pragma pack()
+#pragma pack(8)
+#line 2368 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt10ctype_base { struct _ZNSt6locale5facetE __b_NSt6locale5facetE;};
+#pragma pack()
+#line 2639 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+typedef char _ZNSt5ctypeIcE5_ElemE;
+#pragma pack(8)
+#line 2637 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt5ctypeIcE { struct _ZSt10ctype_base __b_St10ctype_base;
+#line 2823 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+_ZNSt8_Locinfo9_CtypevecE _Ctype;};
+#pragma pack()
+#pragma pack(8)
+#line 23 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZSt5_IosbIiE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 98 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef int _ZNSt8ios_base8fmtflagsE;
+#line 99 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef int _ZNSt8ios_base7iostateE;
+#line 100 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef int _ZNSt8ios_base8openmodeE;
+#line 101 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef int _ZNSt8ios_base7seekdirE;
+#line 117 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef unsigned _ZNSt8ios_base8io_stateE;
+#line 118 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef unsigned _ZNSt8ios_base9open_modeE;
+#line 119 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+typedef unsigned _ZNSt8ios_base8seek_dirE;
+#pragma pack(8)
+#line 122 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZNSt8ios_base7failureE { struct _ZSt12system_error __b_St12system_error;};
+#pragma pack()
+#pragma pack(8)
+#line 96 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZSt8ios_base { const long long *__vptr;
+#line 384 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+size_t _Stdstr;
+#line 470 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt8ios_base7iostateE _Mystate;
+#line 471 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt8ios_base7iostateE _Except;
+#line 472 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZNSt8ios_base8fmtflagsE _Fmtfl;
+#line 473 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZSt10streamsize _Prec;
+#line 474 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+_ZSt10streamsize _Wide;
+#line 475 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZNSt8ios_base9_IosarrayE *_Arr;
+#line 476 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZNSt8ios_base8_FnarrayE *_Calls;
+#line 477 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xiosbase"
+struct _ZSt6locale *_Ploc;};
+#pragma pack()
+#line 71 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+typedef _ZNSt19_Narrow_char_traitsIciE8int_typeE _ZNSt15basic_streambufIcSt11char_traitsIcEE8int_typeE;
+#pragma pack(8)
+#line 179 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE { const long long *__vptr;
+#line 383 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char *_Gfirst;
+#line 384 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char *_Pfirst;
+#line 385 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char **_IGfirst;
+#line 386 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char **_IPfirst;
+#line 387 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char *_Gnext;
+#line 388 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char *_Pnext;
+#line 389 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char **_IGnext;
+#line 390 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+char **_IPnext;
+#line 392 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+int _Gcount;
+#line 393 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+int _Pcount;
+#line 394 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+int *_IGcount;
+#line 395 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+int *_IPcount;
+#line 398 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\streambuf"
+struct _ZSt6locale *_Plocale;};
+#pragma pack()
+#pragma pack(8)
+#line 85 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+struct _ZSt8numpunctIcE { struct _ZNSt6locale5facetE __b_NSt6locale5facetE;
+#line 211 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+const char *_Grouping;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+char _Dp;
+#line 213 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+char _Kseparator;
+#line 214 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+const char *_Falsename;
+#line 215 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+const char *_Truename;};
+#pragma pack()
+#pragma pack(8)
+#line 85 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+struct _ZSt8numpunctIwE { struct _ZNSt6locale5facetE __b_NSt6locale5facetE;
+#line 211 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+const char *_Grouping;
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+unsigned short _Dp;
+#line 213 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+unsigned short _Kseparator;
+#line 214 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+const unsigned short *_Falsename;
+#line 215 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocnum"
+const unsigned short *_Truename;};
+#pragma pack()
+#line 23 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ios"
+typedef struct _ZSo _ZNSt9basic_iosIcSt11char_traitsIcEE5_MyosE;
+#line 24 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ios"
+typedef struct _ZSt15basic_streambufIcSt11char_traitsIcEE _ZNSt9basic_iosIcSt11char_traitsIcEE5_MysbE;
+#pragma pack(8)
+#line 173 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSt9basic_iosIcSt11char_traitsIcEE { struct _ZSt8ios_base __b_St8ios_base;
+#line 163 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ios"
+_ZNSt9basic_iosIcSt11char_traitsIcEE5_MysbE *_Mystrbuf;
+#line 164 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ios"
+_ZNSt9basic_iosIcSt11char_traitsIcEE5_MyosE *_Tiestr;
+#line 165 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ios"
+char _Fillch;char __nv_no_debug_dummy_end_padding_0[7];};
+#pragma pack()
+#pragma pack(8)
+#line 73 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ostream"
+struct _ZNSo12_Sentry_baseE {
+#line 89 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ostream"
+struct _ZSo *_Myostr;};
+#pragma pack()
+#pragma pack(8)
+#line 94 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ostream"
+struct _ZNSo6sentryE { struct _ZNSo12_Sentry_baseE __b_NSo12_Sentry_baseE;
+#line 136 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\ostream"
+__nv_bool _Ok;char __nv_no_debug_dummy_end_padding_0[7];};
+#pragma pack()
+#pragma pack(8)
+#line 185 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iosfwd"
+struct _ZSo { const long long *__vptr; struct _ZSt9basic_iosIcSt11char_traitsIcEE __v_St9basic_iosIcSt11char_traitsIcEE;};
+#pragma pack()
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned char _ZNSaIhE10value_typeE;
+#pragma pack(8)
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaIhE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaIhE10value_typeE _ZNSt25_Default_allocator_traitsISaIhEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIhEE7pointerE;
+#line 652 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef const _ZNSt25_Default_allocator_traitsISaIhEE10value_typeE *_ZNSt25_Default_allocator_traitsISaIhEE13const_pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaIhEE9size_typeE;
+#line 657 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef ptrdiff_t _ZNSt25_Default_allocator_traitsISaIhEE15difference_typeE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaIhE _ZNSt25_Default_allocator_traitsISaIhEE12rebind_allocIhEE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaISt16_Container_proxyE _ZNSt25_Default_allocator_traitsISaIhEE12rebind_allocISt16_Container_proxyEE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaIhEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE12rebind_allocIhEE _ZSt15_Rebind_alloc_tISaIhEhE;
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt13_Simple_typesIhE _ZNSt11conditionalILb1ESt13_Simple_typesIhESt15_Vec_iter_typesIhyxPhPKhEE4typeE;
+#pragma pack(8)
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesIhESt15_Vec_iter_typesIhyxPhPKhEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11conditionalILb1ESt13_Simple_typesIhESt15_Vec_iter_typesIhyxPhPKhEE4typeE _ZSt13conditional_tILb1ESt13_Simple_typesIhESt15_Vec_iter_typesIhyxPhPKhEE;
+#line 789 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef unsigned char _ZNSt13_Simple_typesIhE10value_typeE;
+#line 792 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt13_Simple_typesIhE10value_typeE *_ZNSt13_Simple_typesIhE7pointerE;
+#pragma pack(8)
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesIhE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 391 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt13_Simple_typesIhE7pointerE _ZNSt11_Vector_valISt13_Simple_typesIhEE7pointerE;
+#pragma pack(8)
+#line 386 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt11_Vector_valISt13_Simple_typesIhEE { struct _ZSt17_Container_base12 __b_St17_Container_base12;
+#line 419 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+_ZNSt11_Vector_valISt13_Simple_typesIhEE7pointerE _Myfirst;
+#line 420 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+_ZNSt11_Vector_valISt13_Simple_typesIhEE7pointerE _Mylast;
+#line 421 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+_ZNSt11_Vector_valISt13_Simple_typesIhEE7pointerE _Myend;};
+#pragma pack()
+#line 599 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef struct _ZSt11_Vector_valISt13_Simple_typesIhEE _ZNSt6vectorIhSaIhEE10_Scary_valE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaIhESt11_Vector_valISt13_Simple_typesIhEELb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt6vectorIhSaIhEE10_Scary_valE _Myval2;};
+#pragma pack()
+#line 442 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZSt15_Rebind_alloc_tISaIhEhE _ZNSt6vectorIhSaIhEE5_AltyE;
+#line 453 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE7pointerE _ZNSt6vectorIhSaIhEE7pointerE;
+#line 454 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE13const_pointerE _ZNSt6vectorIhSaIhEE13const_pointerE;
+#line 457 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE9size_typeE _ZNSt6vectorIhSaIhEE9size_typeE;
+#line 458 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE15difference_typeE _ZNSt6vectorIhSaIhEE15difference_typeE;
+#line 603 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef struct _ZSt16_Vector_iteratorISt11_Vector_valISt13_Simple_typesIhEEE _ZNSt6vectorIhSaIhEE8iteratorE;
+#line 604 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef struct _ZSt22_Vector_const_iteratorISt11_Vector_valISt13_Simple_typesIhEEE _ZNSt6vectorIhSaIhEE14const_iteratorE;
+#pragma pack(8)
+#line 436 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt6vectorIhSaIhEE {
+#line 2206 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt16_Compressed_pairISaIhESt11_Vector_valISt13_Simple_typesIhEELb1EE _Mypair;};
+#pragma pack()
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct Point _ZNSaI5PointE10value_typeE;
+#pragma pack(8)
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaI5PointE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaI5PointE10value_typeE _ZNSt25_Default_allocator_traitsISaI5PointEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE10value_typeE *_ZNSt25_Default_allocator_traitsISaI5PointEE7pointerE;
+#line 652 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef const _ZNSt25_Default_allocator_traitsISaI5PointEE10value_typeE *_ZNSt25_Default_allocator_traitsISaI5PointEE13const_pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaI5PointEE9size_typeE;
+#line 657 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef ptrdiff_t _ZNSt25_Default_allocator_traitsISaI5PointEE15difference_typeE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaI5PointE _ZNSt25_Default_allocator_traitsISaI5PointEE12rebind_allocIS0_EE;
+#line 665 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSaISt16_Container_proxyE _ZNSt25_Default_allocator_traitsISaI5PointEE12rebind_allocISt16_Container_proxyEE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaI5PointEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE12rebind_allocIS0_EE _ZSt15_Rebind_alloc_tISaI5PointES0_E;
+#line 60 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt13_Simple_typesI5PointE _ZNSt11conditionalILb1ESt13_Simple_typesI5PointESt15_Vec_iter_typesIS1_yxPS1_PKS1_EE4typeE;
+#pragma pack(8)
+#line 59 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt11conditionalILb1ESt13_Simple_typesI5PointESt15_Vec_iter_typesIS1_yxPS1_PKS1_EE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 69 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11conditionalILb1ESt13_Simple_typesI5PointESt15_Vec_iter_typesIS1_yxPS1_PKS1_EE4typeE _ZSt13conditional_tILb1ESt13_Simple_typesI5PointESt15_Vec_iter_typesIS1_yxPS1_PKS1_EE;
+#line 789 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct Point _ZNSt13_Simple_typesI5PointE10value_typeE;
+#line 792 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt13_Simple_typesI5PointE10value_typeE *_ZNSt13_Simple_typesI5PointE7pointerE;
+#pragma pack(8)
+#line 787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt13_Simple_typesI5PointE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 391 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt13_Simple_typesI5PointE7pointerE _ZNSt11_Vector_valISt13_Simple_typesI5PointEE7pointerE;
+#pragma pack(8)
+#line 386 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt11_Vector_valISt13_Simple_typesI5PointEE { struct _ZSt17_Container_base12 __b_St17_Container_base12;
+#line 419 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+_ZNSt11_Vector_valISt13_Simple_typesI5PointEE7pointerE _Myfirst;
+#line 420 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+_ZNSt11_Vector_valISt13_Simple_typesI5PointEE7pointerE _Mylast;
+#line 421 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+_ZNSt11_Vector_valISt13_Simple_typesI5PointEE7pointerE _Myend;};
+#pragma pack()
+#line 599 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef struct _ZSt11_Vector_valISt13_Simple_typesI5PointEE _ZNSt6vectorI5PointSaIS0_EE10_Scary_valE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISaI5PointESt11_Vector_valISt13_Simple_typesIS0_EELb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt6vectorI5PointSaIS0_EE10_Scary_valE _Myval2;};
+#pragma pack()
+#line 442 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZSt15_Rebind_alloc_tISaI5PointES0_E _ZNSt6vectorI5PointSaIS0_EE5_AltyE;
+#line 453 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE7pointerE _ZNSt6vectorI5PointSaIS0_EE7pointerE;
+#line 454 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE13const_pointerE _ZNSt6vectorI5PointSaIS0_EE13const_pointerE;
+#line 457 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE9size_typeE _ZNSt6vectorI5PointSaIS0_EE9size_typeE;
+#line 458 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE15difference_typeE _ZNSt6vectorI5PointSaIS0_EE15difference_typeE;
+#line 603 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef struct _ZSt16_Vector_iteratorISt11_Vector_valISt13_Simple_typesI5PointEEE _ZNSt6vectorI5PointSaIS0_EE8iteratorE;
+#line 604 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+typedef struct _ZSt22_Vector_const_iteratorISt11_Vector_valISt13_Simple_typesI5PointEEE _ZNSt6vectorI5PointSaIS0_EE14const_iteratorE;
+#pragma pack(8)
+#line 436 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt6vectorI5PointSaIS0_EE {
+#line 2206 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector"
+struct _ZSt16_Compressed_pairISaI5PointESt11_Vector_valISt13_Simple_typesIS0_EELb1EE _Mypair;};
+#pragma pack()
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIcEE12rebind_allocISt16_Container_proxyEE _ZSt15_Rebind_alloc_tISaIcESt16_Container_proxyE;
+#line 931 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSt16_Container_proxy _ZNSaISt16_Container_proxyE10value_typeE;
+#pragma pack(8)
+#line 920 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSaISt16_Container_proxyE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 213 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt17_Container_base12 *_ZNSt16remove_referenceIPSt17_Container_base12E4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIPSt17_Container_base12E {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIPSt17_Container_base12E4typeE _ZSt18remove_reference_tIPSt17_Container_base12E;
+#line 213 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSaIcE _ZNSt16remove_referenceISaIcEE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceISaIcEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceISaIcEE4typeE _ZSt18remove_reference_tISaIcEE;
+#line 1498 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSt22_Container_proxy_ptr12ISaISt16_Container_proxyEE _ZSt20_Container_proxy_ptrISaIcEE;
+#pragma pack(8)
+#line 1459 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt22_Container_proxy_ptr12ISaISt16_Container_proxyEE { struct _ZSt28_Basic_container_proxy_ptr12 __b_St28_Basic_container_proxy_ptr12;
+#line 1461 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZSt15_Rebind_alloc_tISaIcESt16_Container_proxyE *_Al;};
+#pragma pack()
+#line 649 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSaISt16_Container_proxyE10value_typeE _ZNSt25_Default_allocator_traitsISaISt16_Container_proxyEE10value_typeE;
+#line 651 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaISt16_Container_proxyEE10value_typeE *_ZNSt25_Default_allocator_traitsISaISt16_Container_proxyEE7pointerE;
+#line 656 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef size_t _ZNSt25_Default_allocator_traitsISaISt16_Container_proxyEE9size_typeE;
+#pragma pack(8)
+#line 647 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Default_allocator_traitsISaISt16_Container_proxyEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef const _ZNSs7pointerE _ZNSt16remove_referenceIRKPcE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRKPcE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIRKPcE4typeE _ZSt18remove_reference_tIRKPcE;
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSs5_AltyE _ZNSt16remove_referenceIRSaIcEE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRSaIcEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIRSaIcEE4typeE _ZSt18remove_reference_tIRSaIcEE;
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt11_String_valISt13_Simple_typesIcEE7pointerE _ZNSt16remove_referenceIRPcE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRPcE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIRPcE4typeE _ZSt18remove_reference_tIRPcE;
+#pragma pack(8)
+#line 660 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+union __C12 {
+#line 661 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt25_Iostream_error_category2 _Storage;};
+#pragma pack()
+#pragma pack(8)
+#line 659 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt27_Constexpr_immortalize_implISt25_Iostream_error_category2E {
+#line 660 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+#pragma pack(8)
+#line 660 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+union  {
+#line 661 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\system_error"
+struct _ZSt25_Iostream_error_category2 _Storage;}
+#pragma pack()
+;};
+#pragma pack()
+#pragma pack(8)
+#line 426 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xlocale"
+struct _ZSt9_FacetptrISt5ctypeIcEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 213 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef struct _ZSt14default_deleteISt11_Facet_baseE _ZNSt16remove_referenceISt14default_deleteISt11_Facet_baseEE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceISt14default_deleteISt11_Facet_baseEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceISt14default_deleteISt11_Facet_baseEE4typeE _ZSt18remove_reference_tISt14default_deleteISt11_Facet_baseEE;
+#pragma pack(8)
+#line 3162 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt14default_deleteISt11_Facet_baseE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 3190 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+typedef struct _ZSt11_Facet_base *_ZNSt25_Get_deleter_pointer_typeISt11_Facet_baseSt14default_deleteIS0_EvE4typeE;
+#pragma pack(8)
+#line 3189 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt25_Get_deleter_pointer_typeISt11_Facet_baseSt14default_deleteIS0_EvE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 3205 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+typedef _ZNSt25_Get_deleter_pointer_typeISt11_Facet_baseSt14default_deleteIS0_EvE4typeE _ZNSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE7pointerE;
+#pragma pack(8)
+#line 1510 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt16_Compressed_pairISt14default_deleteISt11_Facet_baseEPS1_Lb1EE {
+#line 1512 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE7pointerE _Myval2;};
+#pragma pack()
+#pragma pack(8)
+#line 3203 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE {
+#line 3326 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\memory"
+struct _ZSt16_Compressed_pairISt14default_deleteISt11_Facet_baseEPS1_Lb1EE _Mypair;};
+#pragma pack()
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE7pointerE _ZNSt16remove_referenceIRPSt11_Facet_baseE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRPSt11_Facet_baseE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIRPSt11_Facet_baseE4typeE _ZSt18remove_reference_tIRPSt11_Facet_baseE;
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef const struct _ZSaIhE _ZNSt16remove_referenceIRKSaIhEE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRKSaIhEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIRKSaIhEE4typeE _ZSt18remove_reference_tIRKSaIhEE;
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE12rebind_allocISt16_Container_proxyEE _ZSt15_Rebind_alloc_tISaIhESt16_Container_proxyE;
+#line 1498 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSt22_Container_proxy_ptr12ISaISt16_Container_proxyEE _ZSt20_Container_proxy_ptrISaIhEE;
+#pragma pack(8)
+#line 40 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt11_Tidy_guardISt6vectorIhSaIhEEE {
+#line 41 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt6vectorIhSaIhEE *_Target;};
+#pragma pack()
+#line 1057 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE7pointerE _ZSt12_Alloc_ptr_tISaIhEE;
+#line 1060 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaIhEE9size_typeE _ZSt13_Alloc_size_tISaIhEE;
+#line 1787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZSt12_Alloc_ptr_tISaIhEE _ZNSt25_Uninitialized_backout_alISaIhEE7pointerE;
+#pragma pack(8)
+#line 1784 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Uninitialized_backout_alISaIhEE {
+#line 1811 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt25_Uninitialized_backout_alISaIhEE7pointerE _First;
+#line 1812 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt25_Uninitialized_backout_alISaIhEE7pointerE _Last;
+#line 1813 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt6vectorIhSaIhEE5_AltyE *_Al;};
+#pragma pack()
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef const struct _ZSaI5PointE _ZNSt16remove_referenceIRKSaI5PointEE4typeE;
+#pragma pack(8)
+#line 212 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+struct _ZSt16remove_referenceIRKSaI5PointEE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 230 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xtr1common"
+typedef _ZNSt16remove_referenceIRKSaI5PointEE4typeE _ZSt18remove_reference_tIRKSaI5PointEE;
+#line 770 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE12rebind_allocISt16_Container_proxyEE _ZSt15_Rebind_alloc_tISaI5PointESt16_Container_proxyE;
+#line 1498 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef struct _ZSt22_Container_proxy_ptr12ISaISt16_Container_proxyEE _ZSt20_Container_proxy_ptrISaI5PointEE;
+#pragma pack(8)
+#line 40 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt11_Tidy_guardISt6vectorI5PointSaIS1_EEE {
+#line 41 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt6vectorI5PointSaIS0_EE *_Target;};
+#pragma pack()
+#line 1057 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE7pointerE _ZSt12_Alloc_ptr_tISaI5PointEE;
+#line 1060 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZNSt25_Default_allocator_traitsISaI5PointEE9size_typeE _ZSt13_Alloc_size_tISaI5PointEE;
+#line 1787 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+typedef _ZSt12_Alloc_ptr_tISaI5PointEE _ZNSt25_Uninitialized_backout_alISaI5PointEE7pointerE;
+#pragma pack(8)
+#line 1784 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+struct _ZSt25_Uninitialized_backout_alISaI5PointEE {
+#line 1811 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt25_Uninitialized_backout_alISaI5PointEE7pointerE _First;
+#line 1812 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt25_Uninitialized_backout_alISaI5PointEE7pointerE _Last;
+#line 1813 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory"
+_ZNSt6vectorI5PointSaIS0_EE5_AltyE *_Al;};
+#pragma pack()
+#line 3279 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xstring"
+struct _ZZNSs6appendEPKcyEUlPcS0_yS0_yE_ {char __nv_no_debug_dummy_end_padding_0;};
+#line 48 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+___device__(extern  __no_sc__) void *_Znwy(size_t);
+#line 87 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+___device__(extern  __no_sc__) void _ZdlPvy(void *, size_t);
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#line 257 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError __cudaCDP2Free(void *);
+#line 258 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError __cudaCDP2Malloc(void **, size_t);
+#line 472 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e8cudaFreeEPv(void *);
+#line 477 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocEPPvy(void **, size_t);
+#if !defined(__CUDABE__)
+#line 43 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_string.h"
+ __device_builtin__ ___device__(extern  __no_sc__) void *memcpy(void *, const void *, size_t);
+#endif
+#if !defined(__CUDABE__)
+#line 63 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_string.h"
+ __device_builtin__ ___device__(extern  __no_sc__) void *memset(void *, int, size_t);
+#endif
+#line 166 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+___device__(extern  __no_sc__) void *_ZnwyPv(size_t, void *);
+#line 3639 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\crt/device_functions.h"
+___device__(extern  __no_sc__) unsigned __cudaPushCallConfiguration(struct dim3, struct dim3, size_t, struct CUstream_st *);
+#line 761 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocI5PointEE9cudaErrorPPT_y(struct Point **, size_t);
+#line 761 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocIhEE9cudaErrorPPT_y(unsigned char **, size_t);
+#line 16 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__global__ __var_used__ extern void _Z13voronoiKernelP5PointiPh(struct Point *, int, unsigned char *);
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+___device__(extern  __no_sc__) void _ZN4dim3C1Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+___device__(extern  __no_sc__) void _ZN4dim3C2Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) struct _ZSt17_Container_base12 **_ZSt7forwardIPSt17_Container_base12EOT_RNSt16remove_referenceIS2_E4typeE(_ZSt18remove_reference_tIPSt17_Container_base12E *);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) struct _ZSaIcE *_ZSt7forwardISaIcEEOT_RNSt16remove_referenceIS1_E4typeE(_ZSt18remove_reference_tISaIcEE *);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) const _ZNSs7pointerE *_ZSt7forwardIRKPcEOT_RNSt16remove_referenceIS3_E4typeE(_ZSt18remove_reference_tIRKPcE *);
+#line 1573 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) _ZSt18remove_reference_tIRSaIcEE *_ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_(_ZNSs5_AltyE *);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) _ZNSt11_String_valISt13_Simple_typesIcEE7pointerE *_ZSt7forwardIRPcEOT_RNSt16remove_referenceIS2_E4typeE(_ZSt18remove_reference_tIRPcE *);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) _ZNSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE7pointerE *_ZSt7forwardIRPSt11_Facet_baseEOT_RNSt16remove_referenceIS3_E4typeE(_ZSt18remove_reference_tIRPSt11_Facet_baseE *);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) const struct _ZSaIhE *_ZSt7forwardIRKSaIhEEOT_RNSt16remove_referenceIS3_E4typeE(_ZSt18remove_reference_tIRKSaIhEE *);
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+___device__(extern  __no_sc__) const struct _ZSaI5PointE *_ZSt7forwardIRKSaI5PointEEOT_RNSt16remove_referenceIS4_E4typeE(_ZSt18remove_reference_tIRKSaI5PointEE *);
+extern  __device__  __var_used__ const long long _ZTVSt9exception[5];
+extern  __device__  __var_used__ const long long _ZTVSt9bad_alloc[5];
+extern  __device__  __var_used__ const long long _ZTVSt20bad_array_new_length[5];
+extern  __device__  __var_used__ const long long _ZTVSt13runtime_error[5];
+extern  __device__  __var_used__ const long long _ZTVSt13_System_error[5];
+extern  __device__  __var_used__ const long long _ZTVSt12system_error[5];
+extern  __device__  __var_used__ const long long _ZTVSt25_Iostream_error_category2[9];
+extern  __device__  __var_used__ const long long _ZTVSt8bad_cast[5];
+extern  __device__  __var_used__ const long long _ZTVSt11_Facet_base[6];
+extern  __device__  __var_used__ const long long _ZTVNSt6locale5facetE[6];
+extern  __device__  __var_used__ const long long _ZTVSt10ctype_base[6];
+extern  __device__  __var_used__ const long long _ZTVSt5ctypeIcE[14];
+extern  __device__  __var_used__ const long long _ZTVNSt8ios_base7failureE[5];
+extern  __device__  __var_used__ const long long _ZTVN10__cxxabiv117__class_type_infoE[];
+extern  __device__  __var_used__ const long long _ZTVN10__cxxabiv120__si_class_type_infoE[];
+#include "common_functions.h"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt9exception[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt9bad_alloc[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt20bad_array_new_length[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt13runtime_error[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt13_System_error[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt12system_error[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt25_Iostream_error_category2[9] = {0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt8bad_cast[5] = {0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt11_Facet_base[6] = {0LL,0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVNSt6locale5facetE[6] = {0LL,0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt10ctype_base[6] = {0LL,0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVSt5ctypeIcE[14] = {0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL,0LL};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long long _ZTVNSt8ios_base7failureE[5] = {0LL,0LL,0LL,0LL,0LL};
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#line 472 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e8cudaFreeEPv(
+#line 472 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+void *devPtr){
+#line 473 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+{
+#line 474 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+return __cudaCDP2Free(devPtr);
+#line 475 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+}}
+#line 477 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocEPPvy(
+#line 477 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+void **devPtr, 
+#line 477 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+size_t size){
+#line 478 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+{
+#line 479 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+return __cudaCDP2Malloc(devPtr, size);
+#line 480 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_device_runtime_api.h"
+}}
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#line 166 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void *_ZnwyPv(
+#line 166 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+size_t _Size, 
+#line 167 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+void *_Where){
+#line 168 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+{
+#line 169 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+0;
+#line 170 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+return _Where;
+#line 171 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vcruntime_new.h"
+}}
+#line 761 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocI5PointEE9cudaErrorPPT_y(
+#line 762 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+struct Point **devPtr, 
+#line 763 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+size_t size){
+#line 765 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+{
+#line 766 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+return _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocEPPvy(((void **)((void *)devPtr)), size);
+#line 767 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+}}
+#line 761 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocIhEE9cudaErrorPPT_y(
+#line 762 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+unsigned char **devPtr, 
+#line 763 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+size_t size){
+#line 765 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+{
+#line 766 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+return _ZN39_INTERNAL_af638eb6_9_kernel_cu_ec75798e10cudaMallocEPPvy(((void **)((void *)devPtr)), size);
+#line 767 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\cuda_runtime.h"
+}}
+#line 16 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__global__ __var_used__ void _Z13voronoiKernelP5PointiPh(
+#line 16 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+struct Point *seeds, 
+#line 16 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+int num_seeds, 
+#line 16 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+unsigned char *output){
+#line 16 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+{
+#line 17 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ int __cuda_local_var_455059_9_non_const_x;
+#line 18 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ int __cuda_local_var_455060_9_non_const_y;
+#line 19 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ int __cuda_local_var_455061_9_non_const_idx;
+#line 23 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ float __cuda_local_var_455065_11_non_const_minDist;
+#line 24 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ int __cuda_local_var_455066_9_non_const_minSeedIdx;
+#line 34 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ int __cuda_local_var_455076_9_non_const_color;
+#line 17 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455059_9_non_const_x = ((int)(((blockIdx.x) * (blockDim.x)) + (threadIdx.x)));
+#line 18 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455060_9_non_const_y = ((int)(((blockIdx.y) * (blockDim.y)) + (threadIdx.y)));
+#line 19 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455061_9_non_const_idx = ((__cuda_local_var_455060_9_non_const_y * 1024) + __cuda_local_var_455059_9_non_const_x);
+#line 21 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+if ((__cuda_local_var_455059_9_non_const_x >= 1024) || (__cuda_local_var_455060_9_non_const_y >= 1024)) {
+#line 21 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+return; }
+#line 23 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455065_11_non_const_minDist = (1.00000002e+20F);
+#line 24 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455066_9_non_const_minSeedIdx = (-1);
+#line 26 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+{
+#line 26 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ int i;
+#line 26 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+i = 0;
+#line 26 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+for (; i < num_seeds; ++i)
+#line 26 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+{
+#line 27 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+ float __cuda_local_var_455069_15_non_const_dist;
+#line 27 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455069_15_non_const_dist = (((((float)__cuda_local_var_455059_9_non_const_x) - ((seeds[i]).x)) * (((float)__cuda_local_var_455059_9_non_const_x) - ((seeds[i]).x))) + ((((float)__cuda_local_var_455060_9_non_const_y) - ((seeds[i]).y)) * (((float)__cuda_local_var_455060_9_non_const_y) - ((seeds[i]).y))));
+#line 28 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+if (__cuda_local_var_455069_15_non_const_dist < __cuda_local_var_455065_11_non_const_minDist)
+#line 28 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+{
+#line 29 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455065_11_non_const_minDist = __cuda_local_var_455069_15_non_const_dist;
+#line 30 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455066_9_non_const_minSeedIdx = i;
+#line 31 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+}
+#line 32 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+} }
+#line 34 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+__cuda_local_var_455076_9_non_const_color = (__cuda_local_var_455066_9_non_const_minSeedIdx % 256);
+#line 35 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+(output[((4 * __cuda_local_var_455061_9_non_const_idx) + 0)]) = ((unsigned char)__cuda_local_var_455076_9_non_const_color);
+#line 36 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+(output[((4 * __cuda_local_var_455061_9_non_const_idx) + 1)]) = ((unsigned char)__cuda_local_var_455076_9_non_const_color);
+#line 37 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+(output[((4 * __cuda_local_var_455061_9_non_const_idx) + 2)]) = ((unsigned char)__cuda_local_var_455076_9_non_const_color);
+#line 38 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+(output[((4 * __cuda_local_var_455061_9_non_const_idx) + 3)]) = ((unsigned char)255U); 
+#line 39 "C:\\Users\\Sebas\\Documents\\code\\ParaleloAvanzado\\AdvancedParallelProgramming\\Voronoi\\Voronoi\\kernel.cu"
+}}
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN4dim3C1Ejjj( struct dim3 *const this, 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+unsigned vx, 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+unsigned vy, 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+unsigned vz){
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+{
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+(this->x) = vx;
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+(this->y) = vy;
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+(this->z) = vz; 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.3\\include\\vector_types.h"
+}}
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN4dim3C2Ejjj( struct dim3 *const this,  unsigned __T0,  unsigned __T1,  unsigned __T2){ {  _ZN4dim3C1Ejjj(this, __T0, __T1, __T2);  }}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ struct _ZSt17_Container_base12 **_ZSt7forwardIPSt17_Container_base12EOT_RNSt16remove_referenceIS2_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tIPSt17_Container_base12E *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (struct _ZSt17_Container_base12 **)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ struct _ZSaIcE *_ZSt7forwardISaIcEEOT_RNSt16remove_referenceIS1_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tISaIcEE *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (struct _ZSaIcE *)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ const _ZNSs7pointerE *_ZSt7forwardIRKPcEOT_RNSt16remove_referenceIS3_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tIRKPcE *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (const _ZNSs7pointerE *)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1573 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ _ZSt18remove_reference_tIRSaIcEE *_ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_(
+#line 1573 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZNSs5_AltyE *_Arg){
+#line 1573 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1574 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (_ZSt18remove_reference_tIRSaIcEE *)_Arg;
+#line 1575 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ _ZNSt11_String_valISt13_Simple_typesIcEE7pointerE *_ZSt7forwardIRPcEOT_RNSt16remove_referenceIS2_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tIRPcE *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (_ZNSt11_String_valISt13_Simple_typesIcEE7pointerE *)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ _ZNSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE7pointerE *_ZSt7forwardIRPSt11_Facet_baseEOT_RNSt16remove_referenceIS3_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tIRPSt11_Facet_baseE *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (_ZNSt10unique_ptrISt11_Facet_baseSt14default_deleteIS0_EE7pointerE *)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ const struct _ZSaIhE *_ZSt7forwardIRKSaIhEEOT_RNSt16remove_referenceIS3_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tIRKSaIhEE *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (const struct _ZSaIhE *)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ const struct _ZSaI5PointE *_ZSt7forwardIRKSaI5PointEEOT_RNSt16remove_referenceIS4_E4typeE(
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+_ZSt18remove_reference_tIRKSaI5PointEE *_Arg){
+#line 1562 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+{
+#line 1563 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+return (const struct _ZSaI5PointE *)_Arg;
+#line 1564 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\type_traits"
+}}
