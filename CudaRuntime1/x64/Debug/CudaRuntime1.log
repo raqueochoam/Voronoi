@@ -1,0 +1,36 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64" -x cu -rdc=true  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\x64\Debug\kernel.cu.obj "C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\kernel.cu" 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\thrust/system/cuda/detail/core/util.h(661): warning #20011-D: calling a __host__ function("std::_Iterator_base12::_Iterator_base12(const ::std::_Iterator_base12&)") from a __host__ __device__ function("std::_Iterator_base12::_Iterator_base12 [subobject]") is not allowed
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\thrust/system/cuda/detail/core/util.h(661): warning #20011-D: calling a __host__ function("std::_Iterator_base12::~_Iterator_base12()") from a __host__ __device__ function("std::_Iterator_base12::~_Iterator_base12 [subobject]") is not allowed
+  
+  kernel.cu
+  tmpxft_00007ba8_00000000-7_kernel.cudafe1.cpp
+C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\kernel.cu(98): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\kernel.cu(98): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\kernel.cu(120): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\kernel.cu(120): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+  
+  C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -dlink  -o x64\Debug\CudaRuntime1.device-link.obj -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin/crt" -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\lib\x64" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib cudadevrt.lib  -gencode=arch=compute_52,code=sm_52 -G  C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\x64\Debug\kernel.cu.obj 
+  cudart_static.lib
+  kernel32.lib
+  user32.lib
+  gdi32.lib
+  winspool.lib
+  comdlg32.lib
+  advapi32.lib
+  shell32.lib
+  ole32.lib
+  oleaut32.lib
+  uuid.lib
+  odbc32.lib
+  odbccp32.lib
+  cudart.lib
+  cudadevrt.lib
+  kernel.cu.obj
+     Creando biblioteca C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\x64\Debug\CudaRuntime1.lib y objeto C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\x64\Debug\CudaRuntime1.exp
+LINK : warning LNK4098: la biblioteca predeterminada'LIBCMT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  CudaRuntime1.vcxproj -> C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\x64\Debug\CudaRuntime1.exe

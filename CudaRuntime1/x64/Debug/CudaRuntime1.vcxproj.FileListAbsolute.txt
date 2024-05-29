@@ -1,0 +1,1 @@
+C:\Users\Sebas\Documents\code\ParaleloAvanzado\AdvancedParallelProgramming\prueba\CudaRuntime1\x64\Debug\CudaRuntime1.exe
