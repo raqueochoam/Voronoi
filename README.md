@@ -7,4 +7,4 @@
 - Jorge Vargas González
 
 ## Project setup
-Please add OpenCV at the level of the folder x64 for it in order to work, or modify the paths in Visual Studio as intended.
+Please add OpenCV 4.9.0 at the level of the folder x64 for it in order to work, or modify the paths in Visual Studio as intended.
