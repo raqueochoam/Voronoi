@@ -1,0 +1,99 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  E:\Paralelo\Final\Voronoi\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64" -x cu   -I.\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"     --keep-dir CudaRuntime1\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static    -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdCudaRuntime1\x64\Release\vc143.pdb" -o E:\Paralelo\Final\Voronoi\CudaRuntime1\CudaRuntime1\x64\Release\kernel.cu.obj "E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu" 
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(21758): warning C4819: El archivo contiene un caracter que no se puede representar en la pagina de codigos actual (932). Guarde el archivo con formato Unicode para evitar la perdida de datos
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cub/warp/specializations/warp_exchange_shfl.cuh(1): warning C4819: El archivo contiene un caracter que no se puede representar en la pagina de codigos actual (932). Guarde el archivo con formato Unicode para evitar la perdida de datos
+./opencv/build/include\opencv2/calib3d.hpp(1): warning C4819: El archivo contiene un caracter que no se puede representar en la pagina de codigos actual (932). Guarde el archivo con formato Unicode para evitar la perdida de datos
+./opencv/build/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+./opencv/build/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+    class  BestOf2NearestMatcher : public FeaturesMatcher
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+    class  AffineBestOf2NearestMatcher : public BestOf2NearestMatcher
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+    class  FeatherBlender : public Blender
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+    class  MultiBandBlender : public Blender
+           ^
+  
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(21758): warning C4819: El archivo contiene un caracter que no se puede representar en la pagina de codigos actual (932). Guarde el archivo con formato Unicode para evitar la perdida de datos
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cub/warp/specializations/warp_exchange_shfl.cuh(1): warning C4819: El archivo contiene un caracter que no se puede representar en la pagina de codigos actual (932). Guarde el archivo con formato Unicode para evitar la perdida de datos
+./opencv/build/include\opencv2/calib3d.hpp(1): warning C4819: El archivo contiene un caracter que no se puede representar en la pagina de codigos actual (932). Guarde el archivo con formato Unicode para evitar la perdida de datos
+./opencv/build/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+./opencv/build/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+    class  BestOf2NearestMatcher : public FeaturesMatcher
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+    class  AffineBestOf2NearestMatcher : public BestOf2NearestMatcher
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+    class  FeatherBlender : public Blender
+           ^
+  
+./opencv/build/include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+    class  MultiBandBlender : public Blender
+           ^
+  
+  kernel.cu
+  tmpxft_00003110_00000000-7_kernel.cudafe1.cpp
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(105): warning C4244: 'argumento': conversion de 'int' a 'float'; posible perdida de datos
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(105): warning C4244: 'argumento': conversion de 'int' a 'float'; posible perdida de datos
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(133): warning C4267: 'argumento': conversion de 'size_t' a 'int'; posible perdida de datos
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(133): warning C4267: 'argumento': conversion de 'size_t' a 'int'; posible perdida de datos
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(152): warning C4244: 'argumento': conversion de 'float' a '_Tp'; posible perdida de datos
+          with
+          [
+              _Tp=int
+          ]
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(152): warning C4244: 'argumento': conversion de 'float' a '_Tp'; posible perdida de datos
+          with
+          [
+              _Tp=int
+          ]
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(158): warning C4244: 'argumento': conversion de 'T' a '_Tp'; posible perdida de datos
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              _Tp=int
+          ]
+E:\Paralelo\Final\Voronoi\CudaRuntime1\kernel.cu(158): warning C4244: 'argumento': conversion de 'T' a '_Tp'; posible perdida de datos
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              _Tp=int
+          ]
+     Creando biblioteca E:\Paralelo\Final\Voronoi\CudaRuntime1\x64\Release\CudaRuntime1.lib y objeto E:\Paralelo\Final\Voronoi\CudaRuntime1\x64\Release\CudaRuntime1.exp
+LINK : warning LNK4098: la biblioteca predeterminada'LIBCMT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  LINK : se especificó /LTCG pero no se requiere generación de código; quite /LTCG de la línea de comandos de vínculo para mejorar el rendimiento del vinculador
+  CudaRuntime1.vcxproj -> E:\Paralelo\Final\Voronoi\CudaRuntime1\x64\Release\CudaRuntime1.exe
