@@ -5,3 +5,6 @@
 - Raquel Magdalena Ochoa Martínez
 - Pablo Armando Uscanga Camacho
 - Jorge Vargas González
+
+## Project setup
+Please add OpenCV at the level of the folder x64 for it in order to work, or modify the paths in Visual Studio as intended.
